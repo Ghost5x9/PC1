@@ -21,22 +21,33 @@ function casillaOnClick(i, j) {
 
     if(casilla){
         casilla.innerHTML = "X";
+        casilla_espejo = "X";
         if(casillaarri){
             casillaarri.innerHTML = "X";
         }
-
+        else if(casilla_espejoarri){
+            casilla_espejoarri.innerHTML = "X";
+        }
 
         if(casillaabajo){
             casillaabajo.innerHTML = "X";
+        }
+        else if(casilla_espejoaabajo){
+            casilla_espejoaabajo.innerHTML = "X";
         }
 
         if(casilladera){
             casilladera.innerHTML = "X";      
         }
-
+        else if(casilla_espejoadera){
+            casilla_espejoadera.innerHTML = "X";
+        }
         
         if(casillaiz){
             casillaiz.innerHTML = "X";
+        }
+        else if(casilla_espejoiz){
+            casilla_espejoiz.innerHTML = "X";
         }
     }
 
