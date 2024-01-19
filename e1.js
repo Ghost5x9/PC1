@@ -9,8 +9,17 @@ function casillaOnClick(i, j) {
     
     casilla = devolverCasilla(i, j);
     
-    
-    casilla.innerHTML="X;";
+    if(casilla == True){
+        let casillaarri = (i-1,j);
+        let casillaabajo = (i+1,j);
+        let casilladera = (i,j+1);
+        let casillaiz = (i,j-1);
+        casilla.innerHTML = "X";
+        casillaabajo.innerHTML = "X";
+        casilladera.innerHTML = "X";
+        casillaarri.innerHTML = "X";
+        casillaiz.innerHTML = "X";
+    }
     
     casilla.disabled = true; 
 }
