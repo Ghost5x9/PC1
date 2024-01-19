@@ -10,7 +10,7 @@ function casillaOnClick(i, j) {
     casilla = devolverCasilla(i, j);
     
     
-    casilla.innerHTML="X";
+    casilla.innerHTML="X;";
     
     casilla.disabled = true; 
 }
