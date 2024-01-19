@@ -9,15 +9,24 @@ function casillaOnClick(i, j) {
     
     casilla = devolverCasilla(i, j);
     
-    if(casilla == True){
-        let casillaarri = (i-1,j);
-        let casillaabajo = (i+1,j);
-        let casilladera = (i,j+1);
-        let casillaiz = (i,j-1);
-        casilla.innerHTML = "X";
-        casillaabajo.innerHTML = "X";
-        casilladera.innerHTML = "X";
+    let casillaarri = (i-1,j);
+    let casillaabajo = (i+1,j);
+    let casilladera = (i,j+1);
+    let casillaiz = (i,j-1);
+
+    if(casillaarri){
         casillaarri.innerHTML = "X";
+    }
+
+    if(casillaabajo){
+        casillaabajo.innerHTML = "X";
+    }
+
+    if(casilladera){
+        casilladera.innerHTML = "X";
+    }
+    
+    if(casillaiz){
         casillaiz.innerHTML = "X";
     }
     
